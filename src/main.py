@@ -27,7 +27,7 @@ def initialize_mediapipe():
 # Load model with caching
 @st.cache_resource
 def load_model():
-    return tf.keras.models.load_model("../models/asl_landmark_model.keras")
+    return tf.keras.models.load_model("../models/asl_custom_cnn.keras")
 
 # Extract landmarks with error handling and fallback mechanisms
 def extract_landmarks(image):
